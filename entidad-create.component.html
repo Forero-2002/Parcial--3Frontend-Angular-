@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <h2>Crear Nueva Entidad</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="nit">NIT</label>
+      <input type="text" class="form-control" id="nit" [(ngModel)]="entidad.nit" name="nit" required>
+    </div>
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" id="nombre" [(ngModel)]="entidad.nombre" name="nombre" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </form>
+</div>
